@@ -16,6 +16,8 @@
 		C0BFBF5B2BF3B332007CD164 /* CoupleCalendar_KGCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BFBF5A2BF3B332007CD164 /* CoupleCalendar_KGCTests.swift */; };
 		C0BFBF652BF3B332007CD164 /* CoupleCalendar_KGCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BFBF642BF3B332007CD164 /* CoupleCalendar_KGCUITests.swift */; };
 		C0BFBF672BF3B332007CD164 /* CoupleCalendar_KGCUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BFBF662BF3B332007CD164 /* CoupleCalendar_KGCUITestsLaunchTests.swift */; };
+		C0BFBF7C2BF43F61007CD164 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0BFBF7B2BF43F61007CD164 /* Launch Screen.storyboard */; };
+		C0BFBF7E2BF43FD2007CD164 /* RelationshipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BFBF7D2BF43FD2007CD164 /* RelationshipModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		C0BFBF602BF3B332007CD164 /* CoupleCalendar_KGCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoupleCalendar_KGCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0BFBF642BF3B332007CD164 /* CoupleCalendar_KGCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoupleCalendar_KGCUITests.swift; sourceTree = "<group>"; };
 		C0BFBF662BF3B332007CD164 /* CoupleCalendar_KGCUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoupleCalendar_KGCUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C0BFBF7B2BF43F61007CD164 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		C0BFBF7D2BF43FD2007CD164 /* RelationshipModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelationshipModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +102,13 @@
 		C0BFBF432BF3B331007CD164 /* CoupleCalendar_KGC */ = {
 			isa = PBXGroup;
 			children = (
-				C0BFBF442BF3B331007CD164 /* CoupleCalendar_KGCApp.swift */,
+				C0BFBF7B2BF43F61007CD164 /* Launch Screen.storyboard */,
 				C0BFBF462BF3B331007CD164 /* ContentView.swift */,
-				C0BFBF482BF3B332007CD164 /* Assets.xcassets */,
+				C0BFBF442BF3B331007CD164 /* CoupleCalendar_KGCApp.swift */,
 				C0BFBF4D2BF3B332007CD164 /* Persistence.swift */,
+				C0BFBF7D2BF43FD2007CD164 /* RelationshipModel.swift */,
+				C0BFBF7A2BF43934007CD164 /* Model */,
+				C0BFBF482BF3B332007CD164 /* Assets.xcassets */,
 				C0BFBF4F2BF3B332007CD164 /* CoupleCalendar_KGC.xcdatamodeld */,
 				C0BFBF4A2BF3B332007CD164 /* Preview Content */,
 			);
@@ -131,6 +138,13 @@
 				C0BFBF662BF3B332007CD164 /* CoupleCalendar_KGCUITestsLaunchTests.swift */,
 			);
 			path = CoupleCalendar_KGCUITests;
+			sourceTree = "<group>";
+		};
+		C0BFBF7A2BF43934007CD164 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0BFBF7C2BF43F61007CD164 /* Launch Screen.storyboard in Resources */,
 				C0BFBF4C2BF3B332007CD164 /* Preview Assets.xcassets in Resources */,
 				C0BFBF492BF3B332007CD164 /* Assets.xcassets in Resources */,
 			);
@@ -263,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0BFBF7E2BF43FD2007CD164 /* RelationshipModel.swift in Sources */,
 				C0BFBF4E2BF3B332007CD164 /* Persistence.swift in Sources */,
 				C0BFBF512BF3B332007CD164 /* CoupleCalendar_KGC.xcdatamodeld in Sources */,
 				C0BFBF472BF3B331007CD164 /* ContentView.swift in Sources */,
@@ -433,11 +449,16 @@
 				DEVELOPMENT_TEAM = 62BCLQNF78;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "우리의기억";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -445,9 +466,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kgc.CoupleCalendar-KGC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -462,11 +487,16 @@
 				DEVELOPMENT_TEAM = 62BCLQNF78;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "우리의기억";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -474,9 +504,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kgc.CoupleCalendar-KGC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
